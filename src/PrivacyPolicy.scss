@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;600;700&display=swap');
+
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f1218;
+}
+
+.privacy-policy-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1218;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #E2E8F0;
+  box-sizing: border-box;
+}
+
+.privacy-policy-card {
+  max-width: 800px;
+  width: 100%;
+  background-color: #171b26;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #C6934B, #E8D07C, #C6934B);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #C6934B, #E8D07C, #C6934B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.4;
+
+  .arabic {
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.4rem;
+    color: #E8D07C;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: start;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #E2E8F0;
+    text-align: start;
+  }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+
+    li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+      position: relative;
+      padding-left: 1.5rem;
+      text-align: start;
+
+      &::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #C6934B;
+        font-size: 1.5rem;
+        line-height: 1.1;
+      }
+
+      strong {
+        color: #E8D07C;
+        display: block;         
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-policy-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+}
