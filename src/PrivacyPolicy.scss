@@ -27,7 +27,7 @@ body {
   width: 100%;
   background-color: #171b26;
   border-radius: 16px;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
@@ -116,7 +116,7 @@ ul {
 
 @media (max-width: 600px) {
   .privacy-policy-card {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0;
   }
 
   .title {
